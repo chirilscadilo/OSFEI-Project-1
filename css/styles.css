@@ -173,6 +173,10 @@ body{
 }
 
 /*main*/
+
+.prices{
+    margin-bottom: 40px;
+}
 .desktop-header{
     display: none;
 }
@@ -362,6 +366,116 @@ body{
     color: #000000;
 }
 
+.questions-container{
+    padding: 0 25px 0 16px;
+}
+
+.question-header{
+    max-width: 86px;
+    min-height: 41px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.questions-list{
+    margin-bottom: 24px;
+}
+
+.question-block{
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 760px;
+    min-height: 90px;
+    background: #F8F8F8;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.question-block p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #370050;
+}
+
+.close-btn{
+    border: none;
+    background-color: #F8F8F8;
+}
+
+.see-all-btn{
+    width: 334px;
+    height: 46px;
+
+    display: block;
+    margin: 0 auto;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #EC6225;
+
+    background-color: #FEF1E1;
+    border-radius: 10px;
+    border: none;
+
+    margin-bottom: 120px;
+}
+
+.help-container{
+    padding: 40px 62px;
+}
+
+.help-header{
+    max-width: 153px;
+    min-height: 36px;
+    margin: 0 auto 32px auto;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.003em;
+    color: #370050;
+}
+
+.help-blocks{
+    display: flex;
+    flex-direction: column;
+    gap: 26px
+}
+
+.help-block img{
+    display: block;
+    margin: 0 auto 16px auto;
+}
+
+.contact-block{
+    text-align: center;
+}
+
+.contact-block h5{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #370050;
+}
+
+.schedule, .call{
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #524658;
+}
+
+.call span{
+    color: #EC6225;
+    text-decoration: underline;
+}
 
 /*header 1000px*/
 @media only screen and (min-width: 1000px) {
@@ -624,5 +738,21 @@ body{
     
     .excelent-black{
         color: #000000;
+    }
+
+    .help-container{
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .help-blocks{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin: 0 284px;
+    }
+
+    .help-block{
+        margin-bottom: 26px;
     }
 }
