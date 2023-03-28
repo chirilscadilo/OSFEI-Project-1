@@ -1,0 +1,628 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+
+/*header*/
+
+.additional-nav, .add-nav-left ul, .add-nav-right ul, .add-nav-left ul li, .add-nav-right ul li{
+    display: none; 
+}
+
+.logo{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-display-img{
+    display: none;
+}
+
+.logo-mobile-img{
+    display: block;
+}
+
+.nav-menu{
+    max-width: 526px;
+    max-height: 46px;
+}
+
+.nav-menu ul{
+    display: flex;
+    gap: 58px;
+    padding: 0 16px;
+    
+}
+
+.nav-menu ul li{
+    color: #524658;
+    list-style: none;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+}
+
+#tv_streaming, #choose, #get_started button{
+    display: none;
+}
+
+#broadband{
+    color:#370050;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    border-bottom: 3px solid #370050;
+}
+
+.hero-container{
+    background-color: #370050;
+    padding: 56px 16px 78.05px 16px;
+}
+
+.hero-image{
+    display: block;
+    margin: 0 auto 40px auto;
+    max-width: 100%;
+    min-height: 228px;
+}
+
+.main-header{
+    display: block;
+    margin: 0 auto 40px auto;
+    color:#FFFFFF;
+    max-width: 800px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.0035em;
+    
+}
+
+.special-offer{
+    display: block;
+    margin: 0 auto 40px auto;
+    color: #FFFFFF;
+    max-width: 800px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-width: 480px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    margin: 0 auto 40px auto;
+}
+
+.input-field input{
+    margin-right: 50px;
+    border: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #524658;
+    opacity: 0.5;
+    border-radius: 25px;
+}
+
+.input-field button{
+    min-width: 44px;
+    min-height: 44px;
+    border: none;
+    border-radius: 25px;
+    background: no-repeat #EC6225;
+}
+
+
+.btn-get button{
+    min-width: 175px;
+    min-height: 46px;
+    display: block;
+    padding: 9px 32px 10px 32px;
+    margin:  0 auto 40px auto;
+
+    background: #FEF1E1;
+    color: #EC6225;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    
+}
+
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 267px;
+    margin: 0 auto;
+}
+
+.excelent-white{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.stars-img{
+    background: url('../icons/Vector.png') center no-repeat;
+    background-size: contain;
+    padding: 2.94px 2.62px;
+}
+
+.trustpilot-review::before{
+    content: url('../icons/trustStar.png');
+}
+
+/*main*/
+.desktop-header{
+    display: none;
+}
+
+.mobile-header{
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.003em;
+    color: #370050;
+    margin: 40px auto 45px auto;
+}
+
+.terms{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    max-width: 260px;
+    min-height: 48px;
+    margin: 0 auto;
+    margin-bottom: 43px;
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.12);
+    border-radius: 24px;
+}
+
+.months-long {
+    color: #FFFFFF;
+    background: #370050;
+    border-radius: 24px;
+    padding: 11px 29px 12px 30px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.months-short{
+    padding: 11px 29px 12px 30px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.speed ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 17px 0;
+    margin-bottom: 50.73px;
+    border-bottom: 1px solid rgba(82, 70, 88, 0.16);
+}
+ 
+.speed ul li{
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 30px;
+    max-height: 30px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: -0.0035em;
+    color: #524658;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.cart-option-two, .cart-option-three{
+    display: none;
+}
+
+.cart-option-one{
+    margin: 0 27px 30px 28px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+
+.cart-option-one h4{
+    padding: 40px 24px 20px 24px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: -0.0009em;
+    color: #370050;
+}
+
+.current-price{
+    position: relative;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.0045em;
+    color: #370050;
+    margin-bottom: 28px;
+}
+
+.current-price::before{
+    position: absolute;
+    content: '£27.50';
+    left: 38px;
+    top: 7.5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: -0.0045em;
+    text-decoration-line: line-through;
+    color: #C81162;
+}
+
+.current-price::after{
+    content: '/month';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    color: #524658;
+}
+
+.download-speed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin-bottom: 46px;
+}
+
+.download, .speed{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #524658;
+}
+
+.cart-list-one{
+    margin: 0 24px 31px 24px;
+    margin-bottom: 31px;
+}
+
+.cart-list-one li{
+    list-style-image: url('../icons/material-check.png');
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #524658;
+    margin-bottom: 15px;
+}
+
+.check-btn{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    padding: 9px 32px 10px;
+    background: #EC6225;
+    border-radius: 10px;
+    border: none;
+}
+
+.thereotical{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #524658;
+
+    margin: 0 14px 15px 14px;
+}
+
+.excelent-black{
+    color: #000000;
+}
+
+
+/*header 1000px*/
+@media only screen and (min-width: 1000px) {
+
+    .additional-nav{
+        display: flex;
+        align-items: center;
+        gap: 573px;
+        margin-left: 91px;
+        min-height: 50px;
+    }
+
+    .add-nav-left ul, .add-nav-right ul{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .add-nav-left ul li {
+        display: flex;
+        align-items: center;
+        padding: 20px 20px;
+        list-style: none;
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #370050;
+    }
+
+    .add-nav-right ul li{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0px 10px;
+        border-right: 3px solid #524658;
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #524658;
+    }
+
+    .add-nav-right ul li:last-child{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 10px 10px;
+        border-right: none;
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #524658;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        background-color: #F8F8F8;
+        margin: 0;
+    }
+
+    .logo-display-img{
+        display: block;
+        margin: 11px 136px 12px 91px;
+    }
+    
+    .logo-mobile-img{
+        display: none;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .nav-menu{
+        min-width: 793px;
+    }
+
+    .nav-menu ul{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding: 0;
+    }
+    
+    .nav-menu ul li{
+        color: #524658;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #broadband{
+        color: #370050;
+        font-weight: 500;
+        border: none;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #broadband::after, #choose::after{
+        content: url('../icons/icon-arrow-down.png');
+        margin-left: 8px;
+    }
+
+    #tv_streaming, #choose, #get_started button{
+        display: flex;
+    }
+
+    #get_started button{
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 9px 32px 10px;
+        gap: 10px;
+        background: #EC6225;
+        border-radius: 10px;
+        border: 0;
+    }
+
+    /*main*/
+
+    .desktop-header{
+        display: block;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.003em;
+        color: #370050;
+        margin: 40px auto 45px auto;
+    }
+
+    .mobile-header{
+        display: none;
+    }
+
+    .speed ul , .speed ul li{
+        display: none;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+        
+    .cart-option-one, .cart-option-two, .cart-option-three{
+        display: block;
+        margin: 0 27px 30px 28px;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.12);
+        border-radius: 20px;
+    }
+
+    .cart-option-one h4, .cart-option-two h4, .cart-option-three h4{
+        padding: 40px 24px 20px 24px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: -0.0009em;
+        color: #370050;
+    }
+
+    .cart-option-one .current-price, .cart-option-two .current-price, .cart-option-three .current-price{
+        position: relative;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 52px;
+        text-align: center;
+        letter-spacing: -0.0045em;
+
+        color: #370050;
+    }
+
+    .cart-option-one .current-price::before{
+        position: absolute;
+        content: '£27.50';
+        left: 78px;
+        top: 7.5px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+
+        text-align: right;
+        letter-spacing: -0.0045em;
+        text-decoration-line: line-through;
+
+        color: #C81162;
+    }
+
+    .cart-option-two .current-price::before{
+        position: absolute;
+        content: '£37.50';
+        left: 78px;
+        top: 7.5px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: -0.0045em;
+        text-decoration-line: line-through;
+        color: #C81162;
+    }
+
+    .cart-option-three .current-price::before{
+        position: absolute;
+        content: '£49';
+        left: 100px;
+        top: 7.5px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: -0.0045em;
+        text-decoration-line: line-through;
+        color: #C81162;
+    }
+
+    .cart-option-one .current-price::after, .cart-option-two .current-price::after, .cart-option-three .current-price::after{
+        content: '/month';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #524658;
+    }
+
+    .download-speed{
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .cart-list-one, .cart-list-two, .cart-list-three{
+        margin: 0 24px 31px 24px;
+        margin-bottom: 31px;
+    }
+    
+    .cart-list-one li, .cart-list-two li, .cart-list-three li{
+        list-style-image: url('../icons/material-check.png');
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #524658;
+        margin-bottom: 15px;
+    }
+
+    .thereotical{
+        display: block;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #524658;
+    }
+    
+    .excelent-black{
+        color: #000000;
+    }
+}
