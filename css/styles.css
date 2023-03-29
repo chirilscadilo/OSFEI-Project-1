@@ -32,7 +32,6 @@ body{
 }
 
 .nav-menu{
-    max-width: 526px;
     max-height: 46px;
 }
 
@@ -51,6 +50,11 @@ body{
     text-align: center;
 }
 
+.nav-menu ul li:active, .nav-menu ul li:hover{
+    cursor: pointer;
+    border-bottom: 3px solid #370050;
+}
+
 #tv_streaming, #choose, #get_started button{
     display: none;
 }
@@ -61,7 +65,6 @@ body{
     font-size: 15px;
     line-height: 21px;
     text-align: center;
-    border-bottom: 3px solid #370050;
 }
 
 .hero-container{
@@ -118,7 +121,6 @@ body{
     line-height: 27px;
     color: #524658;
     opacity: 0.5;
-    border-radius: 25px;
 }
 
 .input-field button{
@@ -257,7 +259,8 @@ body{
 }
 
 .cart-option-one{
-    margin: 0 27px 30px 28px;
+    max-width: 415px;
+    margin: 0 auto 30px auto;
     background: #FFFFFF;
     box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.12);
     border-radius: 20px;
@@ -274,7 +277,7 @@ body{
 }
 
 .current-price{
-    position: relative;
+    /* position: relative; */
     font-weight: 700;
     font-size: 45px;
     line-height: 52px;
@@ -285,10 +288,11 @@ body{
 }
 
 .current-price::before{
-    position: absolute;
-    content: '£27.50';
+    /* position: absolute;
+    
     left: 38px;
-    top: 7.5px;
+    top: 7.5px; */
+    content: '£27.50';
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -351,15 +355,13 @@ body{
 }
 
 .thereotical{
+    display: block;
+    margin: 0 auto 15px auto;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    display: flex;
-    align-items: flex-end;
     text-align: center;
     color: #524658;
-
-    margin: 0 14px 15px 14px;
 }
 
 .excelent-black{
@@ -423,7 +425,7 @@ body{
     border-radius: 10px;
     border: none;
 
-    margin-bottom: 120px;
+    margin-bottom: 50px;
 }
 
 .help-container{
@@ -477,14 +479,89 @@ body{
     text-decoration: underline;
 }
 
+@media only screen and (min-width: 900px) {
+    .grid-container{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cart-option-two{
+        max-width: 415px;
+        display: block;
+        margin: 0 27px 30px 28px;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.12);
+        border-radius: 20px;
+    }
+
+    .cart-option-two h4{
+        padding: 40px 24px 20px 24px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: -0.0009em;
+        color: #370050;
+    }
+
+    .cart-option-two .current-price{
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 52px;
+        text-align: center;
+        letter-spacing: -0.0045em;
+
+        color: #370050;
+    }
+
+    .cart-option-two .current-price::before{
+        content: '£37.50';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: -0.0045em;
+        text-decoration-line: line-through;
+        color: #C81162;
+    }
+
+    .cart-option-two .current-price::after{
+        content: '/month';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        color: #524658;
+    }
+
+    .download-speed{
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .cart-list-two{
+        margin: 0 24px 31px 24px;
+        margin-bottom: 31px;
+    }
+    
+    .cart-list-two li{
+        list-style-image: url('../icons/material-check.png');
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #524658;
+        margin-bottom: 15px;
+    }
+}
+
 /*header 1000px*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
 
     .additional-nav{
         display: flex;
         align-items: center;
-        gap: 573px;
-        margin-left: 91px;
+        justify-content: space-between;
+        margin: 0 91px 0 91px;
         min-height: 50px;
     }
 
@@ -504,6 +581,14 @@ body{
         font-size: 15px;
         line-height: 21px;
         color: #370050;
+    }
+
+    .add-nav-left ul li:active, .add-nav-left ul li:hover,
+    .add-nav-right ul li:active, .add-nav-right ul li:hover{
+        cursor: pointer;
+        color: #370050;
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     .add-nav-right ul li{
@@ -535,13 +620,14 @@ body{
     .logo-container{
         display: flex;
         align-items: center;
+        justify-content: space-evenly;
         background-color: #F8F8F8;
         margin: 0;
     }
 
     .logo-display-img{
         display: block;
-        margin: 11px 136px 12px 91px;
+        margin: 11px 0 12px 0;
     }
     
     .logo-mobile-img{
@@ -550,10 +636,6 @@ body{
 
     .burger{
         display: none;
-    }
-
-    .nav-menu{
-        min-width: 793px;
     }
 
     .nav-menu ul{
@@ -583,6 +665,11 @@ body{
         margin-left: 8px;
     }
 
+    #broadband:active, #broadband:hover{
+        cursor: pointer;
+        border-bottom: 3px solid #370050;
+    }
+
     #tv_streaming, #choose, #get_started button{
         display: flex;
     }
@@ -599,26 +686,12 @@ body{
         border: 0;
     }
 
+    #get_started button:active, #get_started button:hover{
+        cursor: pointer;
+        border: none;
+    }
+
     /*main*/
-
-    .desktop-header{
-        display: block;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 36px;
-        text-align: center;
-        letter-spacing: -0.003em;
-        color: #370050;
-        margin: 40px auto 45px auto;
-    }
-
-    .mobile-header{
-        display: none;
-    }
-
-    .speed ul , .speed ul li{
-        display: none;
-    }
 
     .grid-container{
         display: grid;
@@ -645,7 +718,6 @@ body{
     }
 
     .cart-option-one .current-price, .cart-option-two .current-price, .cart-option-three .current-price{
-        position: relative;
         font-weight: 700;
         font-size: 45px;
         line-height: 52px;
@@ -656,10 +728,7 @@ body{
     }
 
     .cart-option-one .current-price::before{
-        position: absolute;
         content: '£27.50';
-        left: 78px;
-        top: 7.5px;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -672,10 +741,7 @@ body{
     }
 
     .cart-option-two .current-price::before{
-        position: absolute;
         content: '£37.50';
-        left: 78px;
-        top: 7.5px;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -686,10 +752,7 @@ body{
     }
 
     .cart-option-three .current-price::before{
-        position: absolute;
         content: '£49';
-        left: 100px;
-        top: 7.5px;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -735,9 +798,32 @@ body{
         text-align: center;
         color: #524658;
     }
+
+    .desktop-header{
+        display: block;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.003em;
+        color: #370050;
+        margin: 40px auto 45px auto;
+    }
+
+    .mobile-header{
+        display: none;
+    }
+
+    .speed ul , .speed ul li{
+        display: none;
+    }
     
     .excelent-black{
         color: #000000;
+    }
+
+    .see-all-btn{
+        margin-bottom: 120px;
     }
 
     .help-container{
@@ -748,8 +834,8 @@ body{
     .help-blocks{
         display: flex;
         flex-direction: row;
-        gap: 24px;
-        margin: 0 284px;
+        gap: 25px;
+        margin: 3rem;
     }
 
     .help-block{
