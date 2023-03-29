@@ -57,16 +57,16 @@
             <h1 lang="en" class="main-header">We`re faster and over £500 cheaper than the big guys</h1>
             <p class="special-offer" lang="en">Get 19x the UK average download speed with our 1,000 Mbps limited time offer.</p>
             
-            <div role="presentation" class="input-field">
+            <form class="input-field">
                 <input type="text" id="address-field" placeholder="Check your address" aria-label="Write your address">
                 <button type="submit" aria-label="Submit your address">
                     <img src="./icons/arrow-icon.png" alt="">
                 </button>
-            </div>
+            </form>
 
-            <div role="presentation" class="btn-get">
-                <button type="submit">Get Your Deal</button>
-            </div>
+            
+            <button type="submit" class="btn-get">Get Your Deal</button>
+            
 
             <div role="presentation" class="reviews">
                 <p class="excelent-white">Excellent</p>
@@ -113,6 +113,11 @@
                         <span class="speed">26.6s</span>
                     </div>
 
+                    <div class="download-bar-container" role="presentation">
+                        <div class="download-bar" role="presentation"></div>
+                        <div class="progress-download-bar" role="presentation"></div>
+                    </div>
+            
                     <ul class="cart-list-one">
                         <li>For moderate use on multiple devices, streaming HD, browsing & downloads</li>
                         <li>Avg. download/upload: 200 Mbps</li>

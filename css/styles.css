@@ -132,7 +132,7 @@ body{
 }
 
 
-.btn-get button{
+.btn-get{
     min-width: 175px;
     min-height: 46px;
     display: block;
@@ -315,7 +315,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
-    margin-bottom: 46px;
+    margin-bottom: 6px;
 }
 
 .download, .speed{
@@ -325,6 +325,28 @@ body{
     color: #524658;
 }
 
+.download-bar{
+    width: 296px;
+    height: 8px;
+    display: block;
+    margin: 0 auto;
+
+    background: #F8F8F8;
+    border-radius: 4px;
+    margin-bottom: 46px;
+    
+}
+
+.progress-download-bar{
+    width: 59px;
+    height: 8px;
+
+    /* Accent Colours/CFL Gradient */
+
+    background: linear-gradient(90deg, #C81162 0%, #CD205D 8.33%, #D22F58 15.62%, #D63D53 26.04%, #DB4C4D 35.94%, #DF5A48 46.35%, #E46843 57.29%, #E8763E 68.23%, #EC8439 76.56%, #F19134 87.5%, #F49E2F 98.96%);
+    border-radius: 4px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
 .cart-list-one{
     margin: 0 24px 31px 24px;
     margin-bottom: 31px;
