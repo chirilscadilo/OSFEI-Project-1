@@ -131,15 +131,26 @@ body{
 .input-field{
     display: flex;
     align-items: center;
-    justify-content: end;
+    flex-direction: row;
     max-width: 480px;
     background-color: #FFFFFF;
+    border: 1px solid #C81162;
+    padding: 1px;
     border-radius: 25px;
     margin: 0 auto 40px auto;
 }
 
-.input-field input{
-    margin: 0 2px 0 2px;
+.input-field:focus-within{
+    outline: 2px solid #C81162; 
+}
+
+.input-field .input-field-desktop{
+    display: none;
+}
+
+.input-field .input-field-mobile{
+    display: block;
+    margin: 0 2px 0 10px;
     border-radius: 25px;
     border: none;
     font-family: 'Arboria-Medium', sans-serif;
@@ -149,7 +160,10 @@ body{
     color: #524658;
     opacity: 0.5;
     width: 100%;
+}
 
+.input-field .input-field-mobile:focus{
+    outline: none;
 }
 
 .input-field button{
@@ -269,23 +283,30 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 0 17px 0;
-    margin-bottom: 50.73px;
+    padding: 0 ;
     border-bottom: 1px solid rgba(82, 70, 88, 0.16);
+    margin-bottom: 50.73px;
+    
 }
  
 .speed ul li{
     list-style: none;
     text-align: center;
-    margin: 0 auto;
-    max-width: 30px;
-    max-height: 30px;
+    margin: 0 auto 0 auto;
+    max-width: 32px;
+    max-height: 60px;
     font-family: 'Arboria-Book', sans-serif;
     font-weight: normal;
     font-size: 15px;
     line-height: 16px;
     letter-spacing: -0.0035em;
     color: #524658;
+    padding: 0 0 17px 0;
+}
+
+.speed ul li:focus, .speed ul li:hover{
+    padding: 0 0 17px 0;
+    border-bottom: 3px solid #370050;
 }
 
 .grid-container{
@@ -398,7 +419,7 @@ body{
 }
 
 .cart-list-one li{
-    list-style-image: url('../icons/material-check.png');
+    list-style-image: url('../icons/Icon-check.svg');
     font-family: 'Arboria-Book', sans-serif;
     font-weight: normal;
     font-size: 13px;
@@ -630,7 +651,7 @@ body{
     }
     
     .cart-list-two li{
-        list-style-image: url('../icons/material-check.png');
+        list-style-image: url('../icons/Icon-check.svg');
         font-family: 'Arboria-Book', sans-serif;
         font-weight: normal;
         font-size: 13px;
@@ -648,7 +669,7 @@ body{
         align-items: center;
         justify-content: space-between;
         margin: 0 91px 0 91px;
-        min-height: 50px;
+        height: 50px;
     }
 
     .add-nav-left ul, .add-nav-right ul{
@@ -660,7 +681,7 @@ body{
     .add-nav-left ul li {
         display: flex;
         align-items: center;
-        padding: 20px 20px;
+        padding: 10px 20px;
         list-style: none;
         text-align: center;
         font-family: 'Arboria-Book', sans-serif;
@@ -674,13 +695,13 @@ body{
         display: flex;
         align-items: center;
         list-style: none;
-        padding: 0px 10px;
-        border-right: 3px solid #524658;
+        padding: 5px 10px;
+        border-right: 2px solid #524658;
         text-align: center;
         font-family: 'Arboria-Book', sans-serif;
         font-weight: normal;
         font-size: 15px;
-        line-height: 21px;
+        line-height: 10px;
         color: #524658;
     }
 
@@ -688,13 +709,13 @@ body{
         display: flex;
         align-items: center;
         list-style: none;
-        padding: 10px 10px;
+        padding: 5px 10px;
         border-right: none;
         text-align: center;
         font-family: 'Arboria-Book', sans-serif;
         font-weight: normal;
         font-size: 15px;
-        line-height: 21px;
+        line-height: 10px;
         color: #524658;
     }
 
@@ -703,7 +724,7 @@ body{
         cursor: pointer;
         color: #370050;
         font-weight: bold;
-        text-decoration: underline;
+        border-bottom: 3px solid #370050;
     }
 
     .logo-container{
@@ -775,6 +796,28 @@ body{
     }
 
     /*main*/
+
+    .input-field .input-field-mobile{
+        display: none;
+    }
+    
+    .input-field .input-field-desktop{
+        display: block;
+        margin: 0 2px 0 10px;
+        border-radius: 25px;
+        border: none;
+        font-family: 'Arboria-Medium', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #524658;
+        opacity: 0.5;
+        width: 100%;
+    }
+    
+    .input-field .input-field-desktop:focus{
+        outline: none;
+    }
 
     .grid-container{
         display: grid;
