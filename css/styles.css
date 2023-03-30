@@ -3,9 +3,26 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Arboria-Book';
+    src: url('../fonts/Arboria/Arboria/OTF/Arboria-Book.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Arboria-Medium';
+    src: url('../fonts/Arboria/Arboria/OTF/Arboria-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Arboria-Bold';
+    src: url('../fonts/Arboria/Arboria/OTF/Arboria-Bold.otf');
+    font-weight: 700;
+}
+
 body{
     background-color: #FFFFFF;
-    font-family: sans-serif;
     line-height: 1.5;
 }
 
@@ -43,16 +60,22 @@ body{
 }
 
 .nav-menu ul li{
-    color: #524658;
+    font-family: 'Arboria-Book', sans-serif;
     list-style: none;
     font-size: 15px;
     line-height: 21px;
     text-align: center;
+    color: #524658;
+    text-decoration: none;
 }
 
 .nav-menu ul li:active, .nav-menu ul li:hover{
     cursor: pointer;
     border-bottom: 3px solid #370050;
+}
+
+.nav-menu ul li:last-child:active, .nav-menu ul li:last-child:hover{
+    border: none
 }
 
 #tv_streaming, #choose, #get_started button{
@@ -61,7 +84,7 @@ body{
 
 #broadband{
     color:#370050;
-    font-weight: 400;
+    font-family: 'Arboria-Medium', sans-serif;
     font-size: 15px;
     line-height: 21px;
     text-align: center;
@@ -84,6 +107,7 @@ body{
     margin: 0 auto 40px auto;
     color:#FFFFFF;
     max-width: 800px;
+    font-family: 'Arboria-Bold', sans-serif;
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
@@ -97,7 +121,8 @@ body{
     margin: 0 auto 40px auto;
     color: #FFFFFF;
     max-width: 800px;
-    font-weight: 400;
+    font-family: 'Arboria-Medium', sans-serif;
+    font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -114,16 +139,21 @@ body{
 }
 
 .input-field input{
-    margin-right: 50px;
-    border: 0;
-    font-weight: 400;
+    margin: 0 2px 0 2px;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Arboria-Medium', sans-serif;
+    font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     color: #524658;
     opacity: 0.5;
+    width: 100%;
+
 }
 
 .input-field button{
+    cursor: pointer;
     min-width: 44px;
     min-height: 44px;
     border: none;
@@ -142,6 +172,7 @@ body{
     color: #EC6225;
     border: none;
     border-radius: 10px;
+    font-family: 'Arboria-Medium', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -157,19 +188,20 @@ body{
 
 .excelent-white{
     color: #FFFFFF;
+    font-family: 'Arboria-Book', sans-serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
 }
 
 .stars-img{
-    background: url('../icons/Vector.png') center no-repeat;
+    background: url('../icons/Vector-stars.svg') center no-repeat;
     background-size: contain;
     padding: 2.94px 2.62px;
 }
 
 .trustpilot-review::before{
-    content: url('../icons/trustStar.png');
+    content: url('../icons/star.svg');
 }
 
 /*main*/
@@ -182,8 +214,10 @@ body{
 }
 
 .mobile-header{
+    max-width: 315px;
     display: block;
-    font-weight: 700;
+    font-family: 'Arboria-Bold', sans-serif;
+    font-weight: 500;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -205,19 +239,27 @@ body{
 }
 
 .months-long {
+    cursor: pointer;
     color: #FFFFFF;
     background: #370050;
     border-radius: 24px;
-    padding: 11px 29px 12px 30px;
-    font-weight: 400;
+    border: none;
+    padding: 5px 29px 5px 30px;
+    font-family: 'Arboria-Book', sans-serif;
+    font-weight: normal;
     font-size: 15px;
     line-height: 21px;
     text-align: center;
 }
 
 .months-short{
-    padding: 11px 29px 12px 30px;
-    font-weight: 400;
+    cursor: pointer;
+    padding: 5px 29px 5px 30px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+    font-family: 'Arboria-Book', sans-serif;
+    font-weight: normal;
     font-size: 15px;
     line-height: 21px;
     text-align: center;
@@ -238,8 +280,8 @@ body{
     margin: 0 auto;
     max-width: 30px;
     max-height: 30px;
-
-    font-weight: 400;
+    font-family: 'Arboria-Book', sans-serif;
+    font-weight: normal;
     font-size: 15px;
     line-height: 16px;
     letter-spacing: -0.0035em;
@@ -257,7 +299,7 @@ body{
 }
 
 .cart-option-one{
-    max-width: 415px;
+    max-width: 320px;
     margin: 0 auto 30px auto;
     background: #FFFFFF;
     box-shadow: 0px 3px 40px rgba(0, 0, 0, 0.12);
@@ -266,6 +308,7 @@ body{
 
 .cart-option-one h4{
     padding: 40px 24px 20px 24px;
+    font-family: 'Arboria-Bold', sans-serif;
     font-weight: 700;
     font-size: 25px;
     line-height: 31px;
@@ -275,7 +318,7 @@ body{
 }
 
 .current-price{
-    /* position: relative; */
+    font-family: 'Arboria-Bold', sans-serif;
     font-weight: 700;
     font-size: 45px;
     line-height: 52px;
@@ -286,11 +329,10 @@ body{
 }
 
 .current-price::before{
-    /* position: absolute;
-    
-    left: 38px;
-    top: 7.5px; */
+    position: relative;
+    bottom:18px;
     content: '£27.50';
+    font-family: 'Arboria-Bold', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -302,7 +344,8 @@ body{
 
 .current-price::after{
     content: '/month';
-    font-weight: 400;
+    font-family: 'Arboria-Book', sans-serif;
+    font-weight: normal;
     font-size: 15px;
     line-height: 21px;
     color: #524658;
@@ -314,6 +357,8 @@ body{
     justify-content: space-between;
     padding: 0 24px;
     margin-bottom: 6px;
+    font-family: 'Arboria-Book', sans-serif;
+    font-weight: normal;
 }
 
 .download, .speed{
@@ -354,7 +399,8 @@ body{
 
 .cart-list-one li{
     list-style-image: url('../icons/material-check.png');
-    font-weight: 400;
+    font-family: 'Arboria-Book', sans-serif;
+    font-weight: normal;
     font-size: 13px;
     line-height: 18px;
     color: #524658;
@@ -365,6 +411,7 @@ body{
     display: block;
     margin: 0 auto;
     margin-bottom: 32px;
+    font-family: 'Arboria-Medium', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -379,6 +426,7 @@ body{
 .thereotical{
     display: block;
     margin: 0 auto 15px auto;
+    font-family: 'Arboria-Book', sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -388,6 +436,8 @@ body{
 
 .excelent-black{
     color: #000000;
+    font-family: 'Arboria-Book', sans-serif;
+    font-weight: normal;
 }
 
 .questions-container{
@@ -400,6 +450,8 @@ body{
     margin: 0 auto;
     text-align: center;
     margin-bottom: 40px;
+    font-family: 'Arboria-Bold', sans-serif;
+    font-weight: 700;
 }
 
 .questions-list{
@@ -419,6 +471,7 @@ body{
 }
 
 .question-block p{
+    font-family: 'Arboria-Medium', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -436,7 +489,7 @@ body{
 
     display: block;
     margin: 0 auto;
-
+    font-family: 'Arboria-Medium', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -458,6 +511,7 @@ body{
     max-width: 153px;
     min-height: 36px;
     margin: 0 auto 32px auto;
+    font-family: 'Arboria-Bold', sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
@@ -482,7 +536,8 @@ body{
 }
 
 .contact-block h5{
-    font-weight: bold;
+    font-family: 'Arboria-Bold', sans-serif;
+    font-weight: 700;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -490,6 +545,8 @@ body{
 }
 
 .schedule, .call{
+    font-family: 'Arboria-Book', sans-serif;
+    font-weight: normal;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -499,6 +556,8 @@ body{
 .call span{
     color: #EC6225;
     text-decoration: underline;
+    font-family: 'Arboria-Bold', sans-serif;
+    font-weight: 700;
 }
 
 @media only screen and (min-width: 900px) {
@@ -508,7 +567,7 @@ body{
         grid-template-columns: 1fr 1fr;
     }
 
-    .cart-option-two{
+    .cart-option-one, .cart-option-two{
         max-width: 415px;
         display: block;
         margin: 0 27px 30px 28px;
@@ -519,6 +578,7 @@ body{
 
     .cart-option-two h4{
         padding: 40px 24px 20px 24px;
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 25px;
         line-height: 31px;
@@ -528,6 +588,7 @@ body{
     }
 
     .cart-option-two .current-price{
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 45px;
         line-height: 52px;
@@ -539,6 +600,7 @@ body{
 
     .cart-option-two .current-price::before{
         content: '£37.50';
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -550,7 +612,8 @@ body{
 
     .cart-option-two .current-price::after{
         content: '/month';
-        font-weight: 400;
+        font-family: 'Arboria-Book', sans-serif;
+        font-weight: normal;
         font-size: 15px;
         line-height: 21px;
         color: #524658;
@@ -568,7 +631,8 @@ body{
     
     .cart-list-two li{
         list-style-image: url('../icons/material-check.png');
-        font-weight: 400;
+        font-family: 'Arboria-Book', sans-serif;
+        font-weight: normal;
         font-size: 13px;
         line-height: 18px;
         color: #524658;
@@ -599,18 +663,11 @@ body{
         padding: 20px 20px;
         list-style: none;
         text-align: center;
-        font-weight: 400;
+        font-family: 'Arboria-Book', sans-serif;
+        font-weight: normal;
         font-size: 15px;
         line-height: 21px;
         color: #370050;
-    }
-
-    .add-nav-left ul li:active, .add-nav-left ul li:hover,
-    .add-nav-right ul li:active, .add-nav-right ul li:hover{
-        cursor: pointer;
-        color: #370050;
-        font-weight: bold;
-        text-decoration: underline;
     }
 
     .add-nav-right ul li{
@@ -620,7 +677,8 @@ body{
         padding: 0px 10px;
         border-right: 3px solid #524658;
         text-align: center;
-        font-weight: 400;
+        font-family: 'Arboria-Book', sans-serif;
+        font-weight: normal;
         font-size: 15px;
         line-height: 21px;
         color: #524658;
@@ -633,10 +691,19 @@ body{
         padding: 10px 10px;
         border-right: none;
         text-align: center;
-        font-weight: 400;
+        font-family: 'Arboria-Book', sans-serif;
+        font-weight: normal;
         font-size: 15px;
         line-height: 21px;
         color: #524658;
+    }
+
+    .add-nav-left ul li:active, .add-nav-left ul li:hover,
+    .add-nav-right ul li:active, .add-nav-right ul li:hover{
+        cursor: pointer;
+        color: #370050;
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     .logo-container{
@@ -650,6 +717,7 @@ body{
     .logo-display-img{
         display: block;
         margin: 11px 0 12px 0;
+        cursor: pointer;
     }
     
     .logo-mobile-img{
@@ -683,8 +751,8 @@ body{
     }
 
     #broadband::after, #choose::after{
-        content: url('../icons/icon-arrow-down.png');
-        margin-left: 8px;
+        content: url('../icons/Icon-arrow-down.svg');
+        margin-left: 3px;
     }
 
     #broadband:active, #broadband:hover{
@@ -697,20 +765,14 @@ body{
     }
 
     #get_started button{
+        cursor: pointer;
         color: #FFFFFF;
-        font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         padding: 9px 32px 10px;
-        gap: 10px;
         background: #EC6225;
         border-radius: 10px;
-        border: 0;
-    }
-
-    #get_started button:active, #get_started button:hover{
-        cursor: pointer;
-        border: none;
+        border-width: 0;
     }
 
     /*main*/
@@ -733,6 +795,7 @@ body{
 
     .cart-option-one h4, .cart-option-two h4, .cart-option-three h4{
         padding: 40px 24px 20px 24px;
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 25px;
         line-height: 31px;
@@ -742,6 +805,7 @@ body{
     }
 
     .cart-option-one .current-price, .cart-option-two .current-price, .cart-option-three .current-price{
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 45px;
         line-height: 52px;
@@ -753,6 +817,7 @@ body{
 
     .cart-option-one .current-price::before{
         content: '£27.50';
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -766,6 +831,7 @@ body{
 
     .cart-option-two .current-price::before{
         content: '£37.50';
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -777,6 +843,7 @@ body{
 
     .cart-option-three .current-price::before{
         content: '£49';
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 22px;
@@ -788,7 +855,8 @@ body{
 
     .cart-option-one .current-price::after, .cart-option-two .current-price::after, .cart-option-three .current-price::after{
         content: '/month';
-        font-weight: 400;
+        font-family: 'Arboria-Book', sans-serif;
+        font-weight: normal;
         font-size: 15px;
         line-height: 21px;
         color: #524658;
@@ -806,7 +874,8 @@ body{
     
     .cart-list-one li, .cart-list-two li, .cart-list-three li{
         list-style-image: url('../icons/material-check.png');
-        font-weight: 400;
+        font-family: 'Arboria-Book', sans-serif;
+        font-weight: normal;
         font-size: 13px;
         line-height: 18px;
         color: #524658;
@@ -816,7 +885,8 @@ body{
     .thereotical{
         display: block;
         margin: 0 auto;
-        font-weight: 400;
+        font-family: 'Arboria-Book', sans-serif;
+        font-weight: normal;
         font-size: 12px;
         line-height: 18px;
         text-align: center;
@@ -825,6 +895,7 @@ body{
 
     .desktop-header{
         display: block;
+        font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
         font-size: 30px;
         line-height: 36px;
