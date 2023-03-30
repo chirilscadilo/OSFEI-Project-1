@@ -641,7 +641,7 @@ body{
 }
 
 /*header 1000px*/
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1000px) {
 
     .additional-nav{
         display: flex;
@@ -752,7 +752,6 @@ body{
 
     #broadband::after, #choose::after{
         content: url('../icons/Icon-arrow-down.svg');
-        margin-left: 3px;
     }
 
     #broadband:active, #broadband:hover{
@@ -873,7 +872,7 @@ body{
     }
     
     .cart-list-one li, .cart-list-two li, .cart-list-three li{
-        list-style-image: url('../icons/material-check.png');
+        list-style-image: url('../icons/Icon-material-check.svg');
         font-family: 'Arboria-Book', sans-serif;
         font-weight: normal;
         font-size: 13px;
