@@ -325,7 +325,7 @@ body{
     border-radius: 20px;
 }
 
-.cart-option-one h4{
+.cart-option-one h3{
     padding: 40px 24px 20px 24px;
     font-family: 'Arboria-Bold', sans-serif;
     font-weight: 700;
@@ -599,7 +599,7 @@ body{
         border-radius: 20px;
     }
 
-    .cart-option-two h4{
+    .cart-option-two h3{
         padding: 40px 24px 20px 24px;
         font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
@@ -838,7 +838,7 @@ body{
         max-width: 415px;
     }
 
-    .cart-option-one h4, .cart-option-two h4, .cart-option-three h4{
+    .cart-option-one h3, .cart-option-two h3, .cart-option-three h3{
         padding: 40px 24px 20px 24px;
         font-family: 'Arboria-Bold', sans-serif;
         font-weight: 700;
