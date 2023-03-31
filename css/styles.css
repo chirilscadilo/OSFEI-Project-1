@@ -393,10 +393,10 @@ body{
 }
 
 .download-bar{
-    width: 296px;
+    /* width: 296px; */
     height: 8px;
     display: block;
-    margin: 0 auto;
+    margin: 0 12px;
 
     background: #F8F8F8;
     border-radius: 4px;
@@ -505,11 +505,12 @@ body{
 }
 
 .see-all-btn{
-    width: 334px;
-    height: 46px;
+    max-width: 334px;
+    min-height: 46px;
 
     display: block;
     margin: 0 auto;
+    padding: 9px 32px 9px;
     font-family: 'Arboria-Medium', sans-serif;
     font-weight: 500;
     font-size: 18px;
