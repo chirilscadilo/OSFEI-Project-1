@@ -54,8 +54,7 @@ body{
 
 .nav-menu ul{
     display: flex;
-    gap: 58px;
-    padding: 0 16px;
+    justify-content: space-around;
     
 }
 
@@ -135,7 +134,7 @@ body{
     max-width: 480px;
     background-color: #FFFFFF;
     border: 1px solid #C81162;
-    padding: 1px;
+    padding: 3px;
     border-radius: 25px;
     margin: 0 auto 40px auto;
 }
@@ -310,9 +309,8 @@ body{
 }
 
 .grid-container{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
 }
 
 .cart-option-two, .cart-option-three{
@@ -376,7 +374,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 24px;
+    /* padding: 0 24px; */
     margin-bottom: 6px;
     font-family: 'Arboria-Book', sans-serif;
     font-weight: normal;
@@ -482,7 +480,7 @@ body{
 .question-block{
     display: flex;
     align-items: center;    
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 760px;
     min-height: 90px;
@@ -497,11 +495,13 @@ body{
     font-size: 18px;
     line-height: 27px;
     color: #370050;
+    margin-left: 32px;
 }
 
 .close-btn{
     border: none;
     background-color: #F8F8F8;
+    margin-right: 32px;
 }
 
 .see-all-btn{
@@ -581,11 +581,12 @@ body{
     font-weight: 700;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 768px) {
     .grid-container{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        /* grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr; */
+        justify-content: center;
     }
 
     .cart-option-one, .cart-option-two{
@@ -820,9 +821,10 @@ body{
     }
 
     .grid-container{
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        /* grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr; */
     }
         
     .cart-option-one, .cart-option-two, .cart-option-three{
@@ -972,13 +974,13 @@ body{
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 25px;
         margin: 3rem;
         
     }
 
     .help-block{
-        margin: 0 auto 26px auto;
         max-width: 250px;
     }
 }
